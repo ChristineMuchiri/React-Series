@@ -1,4 +1,4 @@
-
+import { UserDetails } from "./components/UserDetails";
 export default function App() {
 
     const mockUsers = [
@@ -17,17 +17,7 @@ export default function App() {
     return (
         <div>{mockUsers.map(
             (user) => {
-                return <div>
-                    <b>ID: </b>
-                    <span>{user.id}</span>
-                    <br />
-                    <b>Username: </b>
-                    <span>{user.username}</span>
-                    <br />
-                    <b>Emai: </b>
-                    <span>{user.email}</span>
-                    <br />
-                </div>
+                return <UserDetails key={user.id} user={user} />;
             }
         ) }</div>
     );
