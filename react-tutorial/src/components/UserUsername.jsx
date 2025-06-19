@@ -1,9 +1,10 @@
+import React from "react"
 export function UserUsername(props) {
     console.log(props)
     return (
-        <div>
+        <React.Fragment>
             <b>Username: </b>
             <span>{props.trimmedUsername}</span>
-        </div>
+        </React.Fragment>
     )
 }
