@@ -4,7 +4,7 @@ export function UserUsername(props) {
     return (
         <React.Fragment>
             <b>Username: </b>
-            <span>{props.trimmedUsername}</span>
+            <span>{props.username}</span>
         </React.Fragment>
     )
 }
